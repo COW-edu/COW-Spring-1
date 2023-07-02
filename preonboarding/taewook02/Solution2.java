@@ -1,5 +1,3 @@
-// https://github.com/woowacourse-precourse/java-onboarding/blob/main/docs/PROBLEM2.md
-
 class Solution2 {
     public static void main(String[] args) {
         String inp = args[0];
