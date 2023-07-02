@@ -3,15 +3,17 @@ import java.util.Scanner;
 public class sub2 {
 
 	static String printstr;
-	public static void main(String[] args) {
-		
+	public void main(String[] args) {
+		//입력받기
 		Scanner keyboard = new Scanner(System.in);
 		String str =  keyboard.next();
 		printstr=str;
 		boolean end = false;
+		//soultion에서 boolean 받아서 while문
 		while(end!=true) {
 			end=solution(keyboard);
 		}
+		//출력
 		System.out.println(printstr);
 		
 	}

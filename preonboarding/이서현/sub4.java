@@ -1,45 +1,49 @@
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.Vector;
 
 public class sub4 {
+	public static final int ascIIa=65;
+	public static final int ascIIz=90;
+	public static final int ascIIA=97;
+	public static final int ascIIZ=122;
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		Scanner keyboard = new Scanner(System.in);
+	public void main(String[] args) throws IOException {
+		// 입력받고 vector에 저장
 		Vector<Character> str = new Vector<Character>();
 		int num=System.in.read();
 		for(int i=0;num!=0x0d; i++) {
 			str.add((char)num);
 			num=System.in.read();
 		}
+		// solution에서 vector 반환
 		str=solution(str);
+		//출력
 		for(int i=0; i<str.size(); i++) {
 			System.out.print(str.get(i));
 		}
 	}
 
 	private static Vector<Character> solution(Vector<Character> printstr) {
-		// TODO Auto-generated method stub
+		
 		Vector<Character> newstr = new Vector<Character>();
-
+		
 		for(int i=0; i<printstr.size();i++) {
 			int numchar=(int)printstr.get(i);
-			int startsubtract=numchar-65;
-			int endsubtract = 90-numchar;
-			if(numchar>96 && numchar<123) {
+			int startsubtract=numchar-ascIIa;
+			int endsubtract = ascIIz-numchar;
+			if(numchar>=ascIIA && numchar<=ascIIZ) {
 				startsubtract=numchar-97;
-				endsubtract=122-numchar;
-				if(startsubtract>12) {
-					numchar=97+endsubtract;
+				endsubtract=ascIIZ-numchar;
+				if(startsubtract>12) { // a-z 총 26개 중앙값 13
+					numchar=ascIIA+endsubtract;
 				}else {
-					numchar=122-startsubtract;
+					numchar=ascIIZ-startsubtract;
 				}
-			}else if(numchar>64 && numchar<91){
+			}else if(numchar>=ascIIa && numchar<=ascIIz){
 				if(startsubtract>12) {
-					numchar=65+endsubtract;
+					numchar=ascIIa+endsubtract;
 				}else {
-					numchar=90-startsubtract;
+					numchar=ascIIz-startsubtract;
 				}
 			}else {
 				//empty

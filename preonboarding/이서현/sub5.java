@@ -3,11 +3,14 @@ import java.util.Scanner;
 
 public class sub5 {
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+	public void main(String[] args) throws IOException {
+		// 값 받기
 		Scanner keyboard = new Scanner(System.in);
 		int input=keyboard.nextInt();
+		// solution에서 배열 리턴 받기
+		// 배열 초기화 하는 법 -> int[] arr2={0,0,0}; 
 		int[] arr=solution(input);
+		//출력
 		System.out.print("[");
 		System.out.print(arr[0]);
 		for(int i=1; i<9; i++) {
