@@ -2,6 +2,8 @@
 
 ### 코드
 
+[https://github.com/COW-edu/practice-oop-lotto/pull/5/commits/992f0d29808b606d11047e1be421364b85921038](https://github.com/COW-edu/practice-oop-lotto/pull/5/commits/992f0d29808b606d11047e1be421364b85921038)
+
 ```java
 import java.util.Arrays;
 import java.util.Random;
