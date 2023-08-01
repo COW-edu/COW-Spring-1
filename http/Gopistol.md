@@ -47,7 +47,8 @@
   - 인터넷 계층 - IP
   - 네트워크 인터페이스 계층
   
-  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9aa6c793-1d62-4f78-b581-8fd751b1b0e0/Untitled.png)
+  <img width="356" alt="스크린샷 2023-07-31 오후 6 11 53" src="https://github.com/Youngcircle-kim/CowSubway-BackEnd/assets/104254012/3e072957-accc-409c-b456-1a9aaaade6f8">
+
   
   TCP 특징 - 전송 제어 프로토콜(Transmission Control Protocol)
   
@@ -358,8 +359,6 @@
   If-Modified-Since: Mon, 18 Jul 2016 02:36:04 GMT
   If-None-Match: "c561c68d0ba92bbeb8b0fff2a9199f722e3a621a"
   Cache-Control: max-age=0
-  
-  https://gmlwjd9405.github.io/2019/01/28/http-header-types.html
   ```
   
   ### HTTP 응답 헤더
@@ -400,7 +399,6 @@
   X-Cache-Info: not cacheable; meta data too large
   X-kuma-revision: 1085259
   x-frame-options: DENY
-  https://gmlwjd9405.github.io/2019/01/28/http-header-types.html
   ```
 
 </div>
