@@ -1,5 +1,7 @@
 # WEEK7
 
+https://github.com/COW-edu/practice-mvc-racing/pull/3
+
 ### MVC 패턴
 
 - MVC(Model-View-Controller) 패턴은 소프트웨어 디자인 패턴 중 하나로, 애플리케이션을 세 가지 주요 부분으로 분리하여 설계하는 방법론이다.
